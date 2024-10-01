@@ -1,82 +1,107 @@
-## Chapter 6 Assembly Language Programming 汇编语言程序设计
+# 6 Security, Privacy and Data Integrity 安全，隐私与数据完整性
 
-### opcode 操作码
+## 6.1 Data Security 数据安全
 
-defines the action associated with the instruction.
+### data integrity 数据完整性
 
-### operand 操作数
+a requirement for data to be accurate, complete, consistent and up to date.
 
-defines any data needed by the instruction 
+### data privacy 数据隐私
 
-### machine code 机器码
+a requirement for data to be available only to authorised users.
 
-the language that the CPU uses directly.
+### data security 数据安全
 
-### instruction 指令
+a requirement for data to be available for use when needed, ensures that only
+authorised users have access to the system and data can be recovered if lost
+or corrupted.
 
-a single operation CPU performs.  Each instruction is represented by a binary
-code with a defined number of bits that comprises an opcode and, most often,
-one or more operand.
+### data protection law 数据保护法
 
-### instruction set 指令集
+a law that governs how data should be kept private and secure.
 
-the complete set of machine code instructions use by a CPU.
+### malware 恶意软件
 
-### assembly language 汇编语言
+malicious software that has the intention of causing harm to a computer system
+or its contents.
 
-a low-level language related to machine code where opcodes are written as
-mnemonics and there is a character representation for an operand.
+### hacking 黑客攻击
 
-### source code 源码
+illegal access to a computer system without the owner’s permission.
 
-a computer program that is not written in machine code and has to be translated
-before execution.
+### ethical hacking 道德黑客攻击
 
-### object code 目标码
+hacking used to test the security and vulnerability of a computer system.
 
-the machine code program translated from a source code.
+### phishing 网络钓鱼
 
-### assembler 汇编器
+use email to trick the recipient into giving personal data to the malicious
+sender.
 
-a program used to translate an assembly language program into machine code.
+### pharming 网域嫁接
 
-### directive 伪指令
+redirect the user to fake website in order to illegally obtain personal data.
 
-an instruction to the assembler program.
+### authentication 身份验证
 
-### addressing mode 寻址模式
+verification that someone or something is who or what they claim to be.
 
-method of using the operand to find the value used by the instruction.
+### firewall 防火墙
 
-### direct addressing 直接寻址
+hardware or software that monitors and controls incoming and outgoing traffic
+between a computer and external network.
 
-an addressing mode in which the operand is the memory address of the value used.
+### eEncryption 加密
 
-### indirect addressing 间接寻址
+encode data (plaintext) using encryption key to form ciphertext.  Ciphertext
+can’t be understood if intercepted.
 
-an addressing mode in which the operand is the memory address of a “pointer”,
-which in turn holds the memory address of the value used.
+### decryption 解密
 
-### index addressing 索引寻址
+use algorithm with the correct decryption key to covert ciphertext back to
+plaintext.
 
-an addressing mode in which the memory address of the value used is
-“operand + content in IX register”.
+### anti-spyware software 反间谍软件
 
-### immediate addressing 立即数寻址
+software that detects and removes spyware programs on a computer system.
 
-an addressing mode in which the operand itself is the value used.
+### authorisation 授权
 
-### logical shift 逻辑移位
+definition of a user’s access rights to system components.
 
-where bits in the accumulator are shifted to the right or to the left and zero
-moves into the bit position vacated
+## 6.2 Data Integrity 数据完整性
 
-### cyclic shift 循环移位
+### validation 数据校验
 
-similar to a logical shift but bits shifted from one end reappear at the other
-end.
+a check that data entered is of the correct type and format; it does not
+guarantee that data is accurate.
 
-### arithmetic shift 算术移位
+### verification 数据验证
 
-similar to a logical shift but the sign of the number is preserved.  Used in
-multiplication or division of a signed integer stored in the accumulator.
+confirmation that the data received by a system is correct.
+
+### check digit 校验数位
+
+verification method that calculates an additional digit from the number to
+be sent and append it to the number.
+
+### parity byte 奇偶校验字节
+
+verification method used in data transmission. An additional bit is added to
+make the number of 1s in the byte odd or even to match the parity. If a byte
+with an odd number of 1 bits is received when even parity is used, there is
+an error.
+
+### parity block 奇偶校验块
+
+Parity is calculated horizontally and vertically. A parity byte is created
+from the bits produced by the vertical parity check and sent with the data.
+The receiver re-checks the parity and identify the position of the incorrect
+bit if there is one.
+
+### checksum 校验和
+
+verification method used in data transmission by calculating a number from the
+data and transmit it with the data. The receiver repeats the calculation and
+compares the result with the value received. If the two are different, there is
+an error.

@@ -1,4 +1,6 @@
-## Chapter 2 Communication and Network Technologies 通讯与网络技术
+# 2 Communication and Network Technologies 通讯与网络技术
+
+## 2.1 Networks Including the Internet 网络，包括互联网
 
 ### wide area network (WAN) 广域网
 
@@ -9,6 +11,17 @@ kilometres apart.
 
 a network connecting computers in a small geographical area, usually privately
 owned.
+
+### Internet 互联网
+
+the largest WAN in the world.  Massive network of networks made up of computers
+and other devices.  Use TCP/IP communication protocols.
+
+### World Wide Web (WWW) 万维网
+
+the most important service running on the Internet.  A collection of multimedia
+web pages, written in HTML, stored on websites, and specified by URLs.  Use a
+client-server model and the HTTP/HTTPS protocol to access.
 
 ### Wi-Fi
 
@@ -132,6 +145,7 @@ owned by and only accessed by an organisation.
 owned by a cloud service provider for general access.
 
 ### Bit streaming 比特流
+
 Transfer sequence of bits over the Internet at high speed.  Bits arrive in the
 same order as they were sent.  It requires fast broadband connection some form
 of buffering.
@@ -155,7 +169,7 @@ assign an address (IPv4 or IPv6) to each device connected to the internet.
 ### IPv4 address IPv4 地址
 
 a 32-bit long, hierarchical address of a device on the Internet.  Commonly
-written as four denary numbers (0~255 each) separated by three periods. 
+written as four denary numbers (0~255 each) separated by three periods.
 The first part is a netID and the second part is a hostID.
 
 ### IPv6 address IPv6 地址
@@ -173,14 +187,3 @@ network, improves network security and allow for easier ### maintenance.
 a hierarchical distributed database installed on domain name servers that is
 responsible for mapping a domain name to an IP address. Also known as domain
 name system.
-
-### Internet 互联网
-
-the largest WAN in the world.  Massive network of networks made up of computers
-and other devices.  Use TCP/IP communication protocols.
-
-### World Wide Web (WWW) 万维网
-
-the most important service running on the Internet.  A collection of multimedia
-web pages, written in HTML, stored on websites, and specified by URLs.  Use a
-client-server model and the HTTP/HTTPS protocol to access.

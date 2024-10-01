@@ -1,116 +1,145 @@
-## Chapter 5 Processor Fundamentals 处理器基础
+# 5 System Software 系统软件
 
-### von Neumann architecture 冯·诺伊曼架构
+## 5.1 Operating System 操作系统
 
-computer architecture with the following features: has a processor that directly
-accesses to the memory; the memory stores both programs and data; program
-consists of instructions that the processor executes sequentially.
+### operating system (OS) 操作系统
 
-### arithmetic and logic unit (ALU) 算术逻辑单元
+a software platform that provides facilities for programs to be run and
+provides interface between hardware and software.
 
-component in the processor that carries out all arithmetic and logical
-operations.
+### the Four Basic Tasks of Operating System 操作系统的四大基本任务
 
-### control unit (CU) 控制单元
+process management, memory management, hardware management and file management.
+Sometimes a fifth task is included: security management.
 
-component in the processor that controls the data flow in the computer system
-and ensures the instructions are handled correctly.
+### process 进程
 
-### system clock 系统时钟
+a program that has begun execution.
 
-produces timing signal on the control bus to synchronise activities in a
-computer.  Strictly speaking there are two clocks, one (internal clock)
-synchronise activities inside the processor, and the other (system clock)
-synchronise activities between the inside and the outside.
+### process management 进程管理
 
-### register 寄存器
+part of the OS that allocates resources (mainly CPU time and memory) to
+different processes and permits sharing and exchange of data.
 
-storage components in the processor that temporarily hold data or instructions
-and have very short access time.  Can be general purpose or special purpose.
+### memory management 内存管理
 
-### accumulator 累加器
+part of the OS that controls the main memory.  Tasks including memory
+optimisation, memory organisation and memory protection.
 
-a general-purpose register that stores a numerical value before and after the
-execution of an instruction by the ALU.
+### hardware management 硬件管理
 
-### status register (SR) 状态寄存器
+part of the OS that controls all I/O devices connected to the computer and
+their usage by the processes. The OS installs device drivers to allow
+communication between the devices and the computer, handles the buffer for
+such transmission, and manage interrupts.
 
-a special-purpose register, each bit of which (called a “flag”) can be
-referenced independently and is set or cleared to mean special status.
+### file 文件
 
-### program counter (PC) 程序计数器
+a collection of data stored by a computer program to be used again.
 
-a special-purpose register that stores the memory address of the next
-instruction.
+### file management 文件管理
 
-### current instruction register (CIR) 当前指令寄存器
+part of the OS in charge of the provision of file name conventions, directory
+structures and access control of files.
 
-a special-purpose register that stores the current instruction while it’s being
-decoded and executed.
+### security management 安全管理
 
-### memory address register (MAR) 内存地址寄存器
+part of the OS that ensures the integrity, confidentiality and availability
+of data.
 
-a special-purpose register that stores the address (in the memory or in an I/O
-device) about to be accessed.
+### utility software 实用软件
 
-### memory data register (MDR) 内存数据寄存器
+program that is not executed as part of the normal running of the OS but is
+run when needed.  It can be provided along with the OS or be installed
+separately.
 
-a special-purpose register that the data just read from (or about to be written
-to) the memory.
+### disk formatter 磁盘格式化工具
 
-### index register (IX) 索引寄存器
+utility software that prepares a disk, allowing files to be stored in and
+retrieved from it.
 
-a register used for index addressing.
+### disk checker 磁盘检查工具
 
-### address bus 地址总线
+utility software that checks disk drives for usage and errors, and repair
+errors if possible.
 
-a component that carries an address to the memory controller to access the
-memory location or to the I/O system to identify the source or destination of
-the data.
+### disk defragmenter 磁盘碎片整理工具
 
-### data bus 数据总线
+utility software that reorganises the sectors on an HDD so that files are
+stored on contiguous sectors.
 
-a component that carries data from the processor to the memory or to an output
-device or can carry data from the memory or from an input device.
+### backup software 备份软件
 
-### control bus 控制总线
+utility software that makes copies of files on a portable storage device.
 
-a component that carries signal from the CU to all other computer components.
+### antivirus software 杀毒软件
 
-### word 字
+utility software that quarantines and deletes files infected by virus.
 
-a group of bits that can be handled as a single unit by the computer system.
+### program Library 程序库
 
-### Basic Input/Output System (BIOS) 基本输入/输出系统
+a collection of pre-written programs and modules stored on a computer that
+software developers can import or call in their own programs.
 
-a bootstrap program that is the first to run when a computer is turned on.
-It’s usually stored on a ROM chip.
+### static linking 静态链接
 
-### port 端口
+the object code of a library program or module is linked to the program calling
+it when compiling the latter, and is incorporated into the executable code file.
 
-external connection to a computer which allows it to communicate with various
-peripheral devices.
+### dynamic linking 动态链接
 
-### Universal Serial Bus (USB) 通用串行总线
+the object code of a library program or module is stored in a separate file
+(DLL) and is linked to the program calling it only at the running time.
 
-standard port connecting device to a computer that allows plug-and-play.
+## 5.2 Language Translator 语言处理程序
 
-### High-definition Multimedia Interface (HDMI) 高清晰度多媒体接口
+### translator
 
-type of port connecting devices (usually video output devices such as screen,
-monitor or projector) to a computer.  It transmits both video and audio signals.
+a system software that translate a source code written in any language other
+than machine code into machine code.  Including assembler, compiler and interpreter.
 
-### Video Graphics Array (VGA) 视频图形阵列
+### compiler 编译器
 
-type of port that has similar functionality as HDMI but only transmits video
-signal.
+a translator that translate the source code in high-level language into object
+code and store it on the disk as an executable file.
 
-### interrupt 中断
+### interpreter 解释器
 
-signal sent from a device or software to a processor, requesting it to suspends
-the current operations and serve the interrupt first.  Causes include fatal
-error in program or in hardware, need of I/O.
+a translator that analyses and executes a program in high-level language line
+by line.
 
-### interrupt service routine (ISR) 中断处理程序
+### debugging 调试
 
-a program which handles specific type of interrupt requests.
+finding and correcting errors often called ‘bugs’, in a program.
+
+### integrated Development Environment (IDE) 集成开发环境
+
+a suite of programs used to write and test the source code in a high-level
+programming language. Main features include: context-sensitive prompts,
+auto-correct, syntax highlighting, expand/collapse code blocks,
+single-stepping and setting breakpoints.
+
+### context-sensitive prompts 自动补全
+
+give suggestions for code as the user types.
+
+### auto-correct 自动修正
+
+correct the spelling mistakes in the code.
+
+### pretty-printing (syntax highlighting) 漂亮输出 (语法高亮)
+
+use different colours to display different tokens in the source code, making
+it easier to read.
+
+### collapse code blocks 代码块折叠
+
+hide the code not currently being worked on.
+
+### single-stepping 单步执行
+
+run the code one line at a time and watch the effect of each line.
+
+### breakpoint 断点
+
+stop the code running at a set point to check the variable contents.

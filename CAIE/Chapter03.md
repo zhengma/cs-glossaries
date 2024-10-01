@@ -1,4 +1,6 @@
-## Chapter 3 Hardware 硬件
+# 3 Hardware 硬件
+
+## 3.1 Computer and Its Components 计算机及其组件
 
 ### embedded system 嵌入式系统
 
@@ -91,3 +93,37 @@ beneath when touched.
 
 a rigid surface above a conductive layer that undergoes a change in electrical
 state when a finger touches the screen.
+
+### sensor 传感器
+
+a hardware device that measures a property and transmits a value to a controlling computer.
+
+### actuator 执行器
+
+a hardware device that receives a signal from a computer and adjusts the setting of a controlling device.
+
+## 3.2 Logic Gates and Logic Circuits 逻辑门与逻辑电路
+
+### logic proposition 逻辑命题
+
+a statement that is either TRUE or FALSE.
+
+### problem statement
+
+an informal definition of an outcome which is dependent on one logic proposition
+or a combination of two or more logic propositions.
+
+### logic expression 逻辑表达式
+
+logic propositions combined using Boolean operators, which may be equated to a
+defined outcome.
+
+### logic gate 逻辑门
+
+a component of a logic circuit that has an operation matching that of a Boolean
+operator.
+
+### truth table 真值表
+
+a method of checking the output from a logic circuit. They use all the $2^n$
+possible combinations from n binary inputs.

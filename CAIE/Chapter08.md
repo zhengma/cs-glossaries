@@ -1,141 +1,159 @@
-## Chapter 8 System Software 系统软件
+# 8 Databases 数据库
 
-### operating system (OS) 操作系统
+## 8.1 Databse Concepts 数据库概念
 
-a software platform that provides facilities for programs to be run and
-provides interface between hardware and software.
+### file-based approach
 
-### the Four Basic Tasks of Operating System 操作系统的四大基本任务
+store data in multiple separate files.  It has many limitations in the
+integrity, privacy, redundancy, inconsistency, and dependency of data.
 
-process management, memory management, hardware management and file management.
-Sometimes a fifth task is included: security management.
+### data redundancy 数据冗余
 
-### process 进程
+the same data stored more than once.
 
-a program that has begun execution.
+### database 数据库
 
-### process management 进程管理
+a structured collection of items of data that can be accessed by different
+applications.
 
-part of the OS that allocates resources (mainly CPU time and memory) to
-different processes and permits sharing and exchange of data.
+### relational database 关系型数据库
 
-### memory management 内存管理
+a database model in which each item of data is stored in a relation.
 
-part of the OS that controls the main memory.  Tasks including memory
-optimisation, memory organisation and memory protection.
+### entity 实体
 
-### hardware management 硬件管理
+an object that can have data stored about it.
 
-part of the OS that controls all I/O devices connected to the computer and
-their usage by the processes. The OS installs device drivers to allow
-communication between the devices and the computer, handles the buffer for
-such transmission, and manage interrupts.
+### relation (table) 关系（表）
 
-### file 文件
+the special type of table used in a relational database.
 
-a collection of data stored by a computer program to be used again.
+### field 字段
 
-### file management 文件管理
+a column in a relation containing values.
 
-part of the OS in charge of the provision of file name conventions, directory
-structures and access control of files.
+### attribute 属性
 
-### security management 安全管理
+an individual data item stored for an entity, represented by a field in a
+relation.
 
-part of the OS that ensures the integrity, confidentiality and availability
-of data.
+### record 记录
 
-### utility software 实用软件
+a row in a relation storing data for one entity.
 
-program that is not executed as part of the normal running of the OS but is
-run when needed.  It can be provided along with the OS or be installed
-separately.
+### tuple 元组
 
-### disk formatter 磁盘格式化工具
+data that describes one instance of an entity, represented by a record in a
+relation.
 
-utility software that prepares a disk, allowing files to be stored in and
-retrieved from it.
+### candidate key 候选键
 
-### disk checker 磁盘检查工具
+one attribute or a combination thereof for which each no tuple has the same
+value.
 
-utility software that checks disk drives for usage and errors, and repair
-errors if possible.
+### primary key 主键
 
-### disk defragmenter 磁盘碎片整理工具
+one candidate key or a combination thereof that has been chosen as the unique
+identifier of the tuples.
 
-utility software that reorganises the sectors on an HDD so that files are
-stored on contiguous sectors.
+### secondary key 辅助索引
 
-### backup software 备份软件
+a candidate key that has not been chosen as the primary key.
 
-utility software that makes copies of files on a portable storage device.
+### foreign key 外键
 
-### antivirus software 杀毒软件
+an attribute in one table that refers to the primary key in another table.
 
-utility software that quarantines and deletes files infected by virus.
+### relationship 关系
 
-### program Library 程序库
+the situation in which one table has a foreign key that refers to a primary
+key in another table in the database.  It could be one-to-one, one-to-many,
+many-to-one or many-to-many.
 
-a collection of pre-written programs and modules stored on a computer that
-software developers can import or call in their own programs.
+### Entity-Relationship (E-R) model 实体关系图
 
-### static linking 静态链接
+a graphical representation of a database and the relationships between the
+entities.
 
-the object code of a library program or module is linked to the program calling
-it when compiling the latter, and is incorporated into the executable code file.
+### referential integrity 参照完整性
 
-### dynamic linking 动态链接
+the use of a foreign key to ensure that a value can only be entered in one
+table when the same value already exists in the referenced table.
 
-the object code of a library program or module is stored in a separate file
-(DLL) and is linked to the program calling it only at the running time.
+### repeating group 冗余数据组
 
-### translator
+a set of attributes that have more than one set of values when the other
+attributes each have a single value.
 
-a system software that translate a source code written in any language other
-than machine code into machine code.  Including assembler, compiler and interpreter.
+### normalisation 规范化
 
-### compiler 编译器
+organising data into two or more tables with relationships between them to
+minimise data redundancy.
 
-a translator that translate the source code in high-level language into object
-code and store it on the disk as an executable file.
+### first normal form (1NF) 第一范式
 
-### interpreter 解释器
+entities do not contain repeated groups of attributes.
 
-a translator that analyses and executes a program in high-level language line
-by line.
+### second normal form (2NF) 第二范式
 
-### debugging 调试
+entities are in 1NF and no partial dependency
+any non-key attributes depend upon the primary key.
 
-finding and correcting errors often called ‘bugs’, in a program.
+### third normal form (3NF) 第三范式
 
-### integrated Development Environment (IDE) 集成开发环境
+entities are in 2NF and no non-key dependency: all non-key attributes are
+independent and fully dependent on the primary key only.
 
-a suite of programs used to write and test the source code in a high-level 
-programming language. Main features include: context-sensitive prompts,
-auto-correct, syntax highlighting, expand/collapse code blocks,
-single-stepping and setting breakpoints.
+## 6.2 Data Management System (DBMS) 数据库管理系统
 
-### context-sensitive prompts 自动补全
+software that controls access to data in a database.
 
-give suggestions for code as the user types.
+### database administrator (DBA) 数据库管理员
 
-### auto-correct 自动修正
+a person who uses the DBMS to customise the database to suit user and
+programmer requirements.
 
-correct the spelling mistakes in the code.
+### data dictionary 数据字典
 
-### pretty-printing (syntax highlighting) 漂亮输出 (语法高亮)
+data about the characteristics of the data about to be stored (metadata), such
+as field names and types, table names, relationships, etc. (example: the
+information specified in CREATE TABLE).
 
-use different colours to display different tokens in the source code, making
-it easier to read.
+### logical schema 逻辑模式
 
-### collapse code blocks 代码块折叠
+the conceptual data model for a specific database that is independent of the
+DBMS used to build that database (example: design of entities, E-R diagram).
 
-hide the code not currently being worked on.
+### developer interface 开发者界面
 
-### single-stepping 单步执行
+a software tool allowing users to create items (tables, forms, reports) in the
+DBMS.
 
-run the code one line at a time and watch the effect of each line.
+### query 查询
 
-### breakpoint 断点
+used to select data from a database subject to defined conditions.
 
-stop the code running at a set point to check the variable contents.
+### query processor 查询处理器
+
+software tools provided by a DBMS to allow creation and execution of a query.
+
+### index 索引表
+
+a small secondary table used for rapid searching which contains one attribute
+from the table being searched and pointers to the tuples in that table.
+
+### 6.3 DDL and DML 数据定义与操纵语言
+
+### data definition language (DDL) 数据定义语言
+
+a language used to create, modify and remove the data structures that form a
+database.
+
+### data manipulation language (DML) 数据操纵语言
+
+a language used to add, modify, delete and retrieve the data stored in a
+relational database.
+
+### Structured Query Language (SQL) 结构化查询语言
+
+the standard language used with relational database as DDL and DML.
