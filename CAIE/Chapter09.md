@@ -1,73 +1,95 @@
-### data integrity
+## Chapter 9 Security, Privacy and Data Integrity 安全，隐私与数据完整性
+
+### data integrity 数据完整性
+
 a requirement for data to be accurate, complete, consistent and up to date.
 
-### data privacy
+### data privacy 数据隐私
+
 a requirement for data to be available only to authorised users.
 
 ### data security 数据安全
+
 a requirement for data to be available for use when needed, ensures that only
 authorised users have access to the system and data can be recovered if lost
 or corrupted.
 
-### data protection law
+### data protection law 数据保护法
+
 a law that governs how data should be kept private and secure.
 
 ### malware 恶意软件
+
 malicious software that has the intention of causing harm to a computer system
 or its contents.
 
-### hacking
+### hacking 黑客攻击
+
 illegal access to a computer system without the owner’s permission.
 
-### ethical hacking
+### ethical hacking 道德黑客攻击
+
 hacking used to test the security and vulnerability of a computer system.
 
-### phishing
+### phishing 网络钓鱼
+
 use email to trick the recipient into giving personal data to the malicious
 sender.
 
-### pharming
+### pharming 网域嫁接
+
 redirect the user to fake website in order to illegally obtain personal data.
 
-### authentication
+### authentication 身份验证
+
 verification that someone or something is who or what they claim to be.
 
 ### firewall 防火墙
+
 hardware or software that monitors and controls incoming and outgoing traffic
 between a computer and external network.
 
 ### eEncryption 加密
+
 encode data (plaintext) using encryption key to form ciphertext.  Ciphertext
 can’t be understood if intercepted.
 
 ### decryption 解密
+
 use algorithm with the correct decryption key to covert ciphertext back to
 plaintext.
 
-### anti-spyware software
+### anti-spyware software 反间谍软件
+
 software that detects and removes spyware programs on a computer system.
 
-### authorisation
+### authorisation 授权
+
 definition of a user’s access rights to system components.
 
-### validation
+### validation 数据校验
+
 a check that data entered is of the correct type and format; it does not
 guarantee that data is accurate.
 
-### verification
+### verification 数据验证
+
 confirmation that the data received by a system is correct.
 
-### check digit
+### check digit 校验数位
+
 verification method that calculates an additional digit from the number to
 be sent and append it to the number.
 
-### parity byte
+### parity byte 奇偶校验字节
+
 verification method used in data transmission. An additional bit is added to
 make the number of 1s in the byte odd or even to match the parity. If a byte
 with an odd number of 1 bits is received when even parity is used, there is
 an error.
 
-### parity block
+### parity block 奇偶校验块
+
 Parity is calculated horizontally and vertically. A parity byte is created
 from the bits produced by the vertical parity check and sent with the data.
 The receiver re-checks the parity and identify the position of the incorrect
