@@ -1,0 +1,10 @@
+---
+documentclass:
+    - ctexart
+header-includes: |
+  \usepackage{fancyhdr}
+  \fancyhf{}
+  \rhead{\heiti 马正\quad 渊学通广州}
+  \cfoot{--\ \thepage\ --}
+  \pagestyle{fancy}
+---
