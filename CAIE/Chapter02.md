@@ -1,10 +1,10 @@
-# 2 Communication and Network Technologies 通讯与网络技术
+# 2 Communication 通讯
 
 ## 2.1 Networks Including the Internet 网络，包括互联网
 
 ### wide area network (WAN) 广域网
 
-a network connecting computers on diff erent sites, possibly thousands of
+a network connecting computers on different sites, possibly thousands of
 kilometres apart.
 
 ### local area network (LAN) 局域网
@@ -96,7 +96,7 @@ the second cable.
 
 a device that connects two LANs using different protocols.
 
-### Bridge 网桥
+### bridge 网桥
 
 a device that connects two segments of a LAN using the same protocols.
 
@@ -106,7 +106,9 @@ a component used to identify the end-system.
 
 ### Ethernet 以太网
 
-a protocol for data transmission over wired network using CSMA/CD.
+a protocol for data transmission over wired network using CSMA/CD.  Data is
+transmitted in frames. Each frame has a source and destination address and
+error checking data.
 
 ### collision 冲突
 
@@ -136,13 +138,19 @@ a device that acts as a node on the Internet.
 
 wired network for conventional telephone to make calls or send faxes.
 
+### cloud 云
+
+Accessing a service/files/software on a remote **server**.
+
 ### private cloud 私有云
 
-owned by and only accessed by an organisation.
+owned by and only accessible to an organisation, being offered either over the
+Internet or a private internal network.
 
 ### public cloud 公有云
 
-owned by a cloud service provider for general access.
+owned by a cloud service provider over the public Internet, accessible to anyone
+with the appropriate credentials.
 
 ### Bit streaming 比特流
 
@@ -181,6 +189,11 @@ The first part is a netID and the second part is a hostID.
 
 divide network into two or more sub-networks.  It reduces the traffic in a
 network, improves network security and allow for easier ### maintenance.
+
+### Network Address Translation (NAT) 网络地址转换
+
+a technique used by routers to allow multiple devices in a private LAN to share
+a single public IP address.
 
 ### Domain name service (DNS) 域名服务
 

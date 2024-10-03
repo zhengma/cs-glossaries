@@ -49,7 +49,7 @@ relation.
 ### candidate key 候选键
 
 one attribute or a combination thereof for which each no tuple has the same
-value.
+value and hence **could** be a primary key.
 
 ### primary key 主键
 
@@ -117,7 +117,7 @@ programmer requirements.
 
 data about the characteristics of the data about to be stored (metadata), such
 as field names and types, table names, relationships, etc. (example: the
-information specified in CREATE TABLE).
+information specified in `CREATE TABLE`).
 
 ### logical schema 逻辑模式
 
@@ -131,11 +131,13 @@ DBMS.
 
 ### query 查询
 
-used to select data from a database subject to defined conditions.
+used to select data from a database subject to defined conditions, allowing
+searches to find specific data.
 
 ### query processor 查询处理器
 
-software tools provided by a DBMS to allow creation and execution of a query.
+software tools provided by a DBMS to allow creation and execution of a query,
+and organises the results to be displayed to the user
 
 ### index 索引表
 

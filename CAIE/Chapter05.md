@@ -55,22 +55,23 @@ separately.
 
 ### disk formatter 磁盘格式化工具
 
-utility software that prepares a disk, allowing files to be stored in and
+utility software that initialises a disk, allowing files to be stored in and
 retrieved from it.
 
 ### disk checker 磁盘检查工具
 
-utility software that checks disk drives for usage and errors, and repair
-errors if possible.
+utility software that checks disk drives for errors and inconsistencies, and
+repair errors if possible.
 
 ### disk defragmenter 磁盘碎片整理工具
 
-utility software that reorganises the sectors on an HDD so that files are
-stored on contiguous sectors.
+utility software that reorganises the sectors on an HDD, so that individdual
+files are stored on contiguous sectors, improving disk access times.
 
 ### backup software 备份软件
 
-utility software that makes copies of files on a portable storage device.
+utility software that makes copies of files **at regular intervals** on a
+portable storage device, so that lost data can be **retrieved**. 
 
 ### antivirus software 杀毒软件
 
@@ -100,13 +101,13 @@ than machine code into machine code.  Including assembler, compiler and interpre
 
 ### compiler 编译器
 
-a translator that translate the source code in high-level language into object
-code and store it on the disk as an executable file.
+a translator that translate the whole source code in high-level language into
+object code and, if successful, store it on the disk as an executable file.
 
 ### interpreter 解释器
 
 a translator that analyses and executes a program in high-level language line
-by line.
+by line, stopping when an error is encountered.
 
 ### debugging 调试
 

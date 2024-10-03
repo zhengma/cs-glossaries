@@ -20,16 +20,17 @@ optic disc.
 ### Random-Access Memory (RAM) 随机存取存储器
 
 volatile memory that can be read from or written to any number of times.
+It stores currently running software and data.
 
 ### static RAM (SRAM) 静态RAM
 
-type of RAM chip that does not need refreshing.  Each bit uses flip-flops
+type of RAM that does not need refreshing.  Each bit uses flip-flops
 consisting of several transistors.  It’s faster and consumes less power, but
 is more expensive.
 
 ### dynamic RAM (DRAM) 动态RAM
 
-type of RAM chip that needs to be constantly refreshed.  Each bit uses a single
+type of RAM that needs to be constantly refreshed.  Each bit uses a single
 transistor and capacitor.  It’s slower and consumes more power, but is less
 expensive.
 
@@ -41,7 +42,7 @@ data about to be needed by the processor.
 ### read-only memory (ROM) 只读存储器
 
 non-volatile memory that cannot be written to but can be read from any number
-of times.
+of times. It stores, for example, the start-up instructions.
 
 ### programmable ROM (PROM) 可编程只读存储器
 
@@ -49,12 +50,13 @@ type of ROM that can be programmed once.
 
 ### erasable PROM (EPROM) 可擦除可编程只读存储器
 
-can be programmed several times after erasing with UV light.
+type of ROM that can be erased with UV light and overwritten multiple times,
+but to erase it the chip has to be removed from device.
 
 ### electrically EPROM (EEPROM) 电可擦除可编程只读存储器
 
-can be programmed many times after erasing with electrical signal. It stays in
-the circuit while changing content.
+can be overwritten many times after erasing with electrical signal. It stays in
+the circuit while being rewritten.
 
 ### buffer 缓冲区
 

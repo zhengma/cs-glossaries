@@ -5,8 +5,9 @@
 ### von Neumann architecture 冯·诺伊曼架构
 
 computer architecture with the following features: has a processor that directly
-accesses to the memory; the memory stores both programs and data; program
-consists of instructions that the processor executes sequentially.
+accesses to the memory; the memory stores both programs and data (stored program
+concept); program consists of instructions that the processor executes
+sequentially.
 
 ### arithmetic and logic unit (ALU) 算术逻辑单元
 
@@ -15,8 +16,9 @@ operations.
 
 ### control unit (CU) 控制单元
 
-component in the processor that controls the data flow in the computer system
-and ensures the instructions are handled correctly.
+component in the processor that coordinates the actions of other components,
+controls the data flow in the computer system and ensures the instructions are
+handled correctly.
 
 ### system clock 系统时钟
 
@@ -37,12 +39,12 @@ execution of an instruction by the ALU.
 
 ### status register (SR) 状态寄存器
 
-a special-purpose register, each bit of which (called a “flag”) can be
-referenced independently and is set or cleared to mean special status.
+a special-purpose register, each bit of which (called a "flag") can be
+referenced independently and is set by events.
 
 ### program counter (PC) 程序计数器
 
-a special-purpose register that stores the memory address of the next
+a special-purpose register that stores the memory address of the **next**
 instruction.
 
 ### current instruction register (CIR) 当前指令寄存器
@@ -57,12 +59,13 @@ device) about to be accessed.
 
 ### memory data register (MDR) 内存数据寄存器
 
-a special-purpose register that the data just read from (or about to be written
+a special-purpose register that stores the data just read from (or about to be written
 to) the memory.
 
 ### index register (IX) 索引寄存器
 
-a register used for index addressing.
+a special-purpose register that stores a value that is added to an address to
+give another address.
 
 ### address bus 地址总线
 
@@ -109,9 +112,9 @@ signal.
 
 ### interrupt 中断
 
-signal sent from a device or software to a processor, requesting it to suspends
-the current operations and serve the interrupt first.  Causes include fatal
-error in program or in hardware, need of I/O.
+**signal sent** from a device or software to a processor, requesting it to suspends
+the current operations and serve the interrupt first.  Causes include: fatal
+error in program (e.g. division by zero) or in hardware, need of I/O.
 
 ### interrupt service routine (ISR) 中断处理程序
 

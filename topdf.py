@@ -23,11 +23,11 @@ if __name__ == "__main__":
         for file in files:
             if file[-3:] == '.md':
                 source = f'{root}/{file}'
-                outfile = f'{root}/pdf/{file[:-3]}.pdf'
-                if (os.path.exists(outfile) and
-                    os.path.getmtime(outfile) > os.path.getmtime(source)):
+                outf = f'{root}/pdf/{file[:-3]}.pdf'
+                if (os.path.exists(outf) and
+                    os.path.getmtime(outf) > os.path.getmtime(source)):
                     break
                 if not os.path.exists(f'{root}/pdf'):
                     os.mkdir(f'{root}/pdf')
-                pypandoc.convert_file(source, 'pdf', outputfile=outfile,
+                pypandoc.convert_file(source, 'pdf', outputfile=outf,
                                       extra_args=pdoc_args)

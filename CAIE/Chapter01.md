@@ -31,12 +31,12 @@ a prefix to define the magnitude of a value. Examples are *kibi*, *mebi*,
 *gibi* and *tebi* representing factors of $2^{10}$, $2^{20}$, $2^{30}$ and
 $2^{40}$ respectively.
 
-### one’s complement 反码表示法
+### one's complement 反码表示法
 
 a form of signed integer, in which the binary representation of $-n$ is the
 bitwise `NOT` of that of $n$.
 
-### two’s complement 补码表示法
+### two's complement 补码表示法
 
 a form of signed integer, in which the binary representation of $-n$ is the
 bitwise `NOT` of that of $n$ **plus 1**.
@@ -53,6 +53,22 @@ the storage of a binary value representing one denary digit in a nibble.
 ### packed BCD
 
 store two BCD nibbles in one byte.
+
+### character set 字符集
+
+all of the characters/symbols that the computer can use, in which each character
+has a unique numerical code.
+
+### ASCII code ASCII 码
+
+coding system in which **7 bits** are used to encode all the characters on a
+keyboard and control codes.  Extended ASCII use **8 bits** to represent more
+characters.
+
+### Unicode
+
+coding system which represents characters in all the languages of the world,
+using up to 4 bytes.  The first 128 characters are the same as ASCII code.
 
 ## 1.2 Multimedia 多媒体
 
@@ -103,7 +119,7 @@ can display.
 ### file header 文件的标头
 
 a set of bytes at the beginning of a bitmap file which identifies the file and
-contains information about the coding used.
+contains data about the image file e.g. file format, bit depty, file size, etc.
 
 ### analogue data 模拟信号数据
 

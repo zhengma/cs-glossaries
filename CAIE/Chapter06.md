@@ -12,9 +12,9 @@ a requirement for data to be available only to authorised users.
 
 ### data security 数据安全
 
-a requirement for data to be available for use when needed, ensures that only
-authorised users have access to the system and data can be recovered if lost
-or corrupted.
+a requirement for data to be available for use when needed, can be recovered if
+lost or corrupted, and only accessible by the authorised.  It emphasize on the
+prevention against data **loss**.
 
 ### data protection law 数据保护法
 
@@ -24,6 +24,10 @@ a law that governs how data should be kept private and secure.
 
 malicious software that has the intention of causing harm to a computer system
 or its contents.
+
+### virus 电脑病毒
+
+malware that replicates itself and can corrupt data.
 
 ### hacking 黑客攻击
 
@@ -78,7 +82,8 @@ guarantee that data is accurate.
 
 ### verification 数据验证
 
-confirmation that the data received by a system is correct.
+confirmation that the data received by a system is correct. It does not check
+if the **original** data is accurate.
 
 ### check digit 校验数位
 

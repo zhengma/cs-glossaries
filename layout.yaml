@@ -4,6 +4,7 @@ documentclass:
 header-includes: |
   \usepackage{fancyhdr}
   \fancyhf{}
+  \lhead{\textnormal{\kaishu\leftmark}}
   \rhead{\heiti 马正\quad 渊学通广州}
   \cfoot{--\ \thepage\ --}
   \pagestyle{fancy}
