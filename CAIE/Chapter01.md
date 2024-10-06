@@ -4,12 +4,12 @@
 
 ### denary numbers 十进制数
 
-also known as decimal numbers, are written using one of the symbols 0~9 for
+also known as decimal numbers. They are written using one of the symbols 0~9 for
 each denary digit.
 
 ### bit 位
 
-a digit in the binary number system written using either of the symbols 0 and 1.
+a digit in the binary number system written using symbols 0 and 1.
 
 ### byte 字节
 
@@ -76,6 +76,10 @@ using up to 4 bytes.  The first 128 characters are the same as ASCII code.
 
 a graphic consisting of drawing objects defined in a drawing list.
 
+### property 性质
+
+defines one aspect of the appearance of the drawing object.
+
 ### drawing object
 
 a component defined by geometric formulae and associated properties (fill
@@ -84,10 +88,6 @@ colour, line width, etc.).
 ### drawing list
 
 a list contains one set of values for each drawing object.
-
-### property 性质
-
-defines one aspect of the appearance of the drawing object.
 
 ### bitmap image 位图
 
@@ -119,7 +119,7 @@ can display.
 ### file header 文件的标头
 
 a set of bytes at the beginning of a bitmap file which identifies the file and
-contains data about the image file e.g. file format, bit depty, file size, etc.
+contains data about the image file e.g. file format, bit depth, file size, etc.
 
 ### analogue data 模拟信号数据
 

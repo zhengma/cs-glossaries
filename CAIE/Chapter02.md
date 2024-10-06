@@ -48,6 +48,12 @@ needs connection to a network to work.
 a client that carries out at least some of the processing itself, so that it
 can also work in offline mode.
 
+### peer-to-peer network 对等网络
+
+a model in which all computers are of equal status and data is distributed. Each
+computer is responsible for its own security and they communicate to share
+resources.
+
 ### topology 网络拓扑
 
 the configuration of a network that defines how the various devices on the
@@ -55,19 +61,20 @@ network are connected.
 
 ### bus topology 总线拓扑
 
-contains one shared link to which all devices are attached.
+a network topology using a single central cable, to which all devices are
+attached.
 
 ### end system 端系统
 
 a computer or server connected to a network.
 
-### mesh topology 网状拓扑
-
-contains direct links between devices.
-
 ### star topology 星形拓扑
 
-each end-system is linked to a central device.
+a network topology in which each end-system is linked to a central device.
+
+### mesh topology 网状拓扑
+
+a network topology containing direct links between devices.
 
 ### hybrid network
 
@@ -102,7 +109,8 @@ a device that connects two segments of a LAN using the same protocols.
 
 ### Network Interface Card (NIC) 网卡
 
-a component used to identify the end-system.
+a component used to identify the end-system and provides an interface to
+wireless network.
 
 ### Ethernet 以太网
 
@@ -132,7 +140,7 @@ enabled devices to connect to a wired network.
 
 ### router 路由器
 
-a device that acts as a node on the Internet.
+a device that enables data packets to be routed between different networks.
 
 ### public switched telephone network (PSTN) 公共交换电话网络
 
@@ -184,6 +192,24 @@ The first part is a netID and the second part is a hostID.
 
 128-bit long.  Commonly written as eight chunks of hexadecimal numbers
 (four digits each) separated by seven colons.
+
+### public IP address 公网IP地址
+
+an IP address visible to any device on the Internet.
+
+### private IP address 私有IP地址
+
+an IP address only visible to devices within the LAN.
+
+### static IP address 静态IP地址
+
+an IP address allocated to a device, and does not change each time the device
+is connect to the network.
+
+### dynamic IP address 动态IP地址
+
+the IP address allocated to a device that may be different each time it is
+connected to the network.
 
 ### Subnetting 子网
 

@@ -4,8 +4,9 @@
 
 ### embedded system 嵌入式系统
 
-a computer system that only performs specific task built into another device.
-Its processor, memory and I/O capability are all dedicated to this task only.
+a computer system built into a larger system that only performs specific task
+built into another device. Its processor, memory and I/O capability are all
+dedicated to this task only.
 
 ### primary storage 主存储器
 
@@ -98,11 +99,23 @@ state when a finger touches the screen.
 
 ### sensor 传感器
 
-a hardware device that measures a property and transmits a value to a controlling computer.
+a hardware device that measures a property and transmits a value to a
+controlling computer.
 
 ### actuator 执行器
 
-a hardware device that receives a signal from a computer and adjusts the setting of a controlling device.
+a hardware device that receives a signal from a computer and adjusts the setting
+of a controlling device.
+
+### monitor system 监控系统
+
+a system that use sensor to measure and record the condition, but does not
+affect the input to the sensor.
+
+### control system 控制系统
+
+a system that use sensor to take input, and use feedback to control the actuator
+and affect the input.
 
 ## 3.2 Logic Gates and Logic Circuits 逻辑门与逻辑电路
 

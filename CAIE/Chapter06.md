@@ -27,7 +27,7 @@ or its contents.
 
 ### virus 电脑病毒
 
-malware that replicates itself and can corrupt data.
+malware that **replicates itself** and can corrupt data.
 
 ### hacking 黑客攻击
 

@@ -26,7 +26,8 @@ if __name__ == "__main__":
                 outf = f'{root}/pdf/{file[:-3]}.pdf'
                 if (os.path.exists(outf) and
                     os.path.getmtime(outf) > os.path.getmtime(source)):
-                    break
+                    print(f'{source} has not changed since last conversion.')
+                    continue
                 if not os.path.exists(f'{root}/pdf'):
                     os.mkdir(f'{root}/pdf')
                 pypandoc.convert_file(source, 'pdf', outputfile=outf,

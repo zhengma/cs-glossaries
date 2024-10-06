@@ -23,14 +23,16 @@ IGCSE的，以至于其它 A level 考试局的清单.
 
 - 自己的电脑上须已安装合适版本的 Python.
 - 自己的电脑上安装了 `xelatex` 和必要的$\LaTeX$库
-（包括`xelatex`，`ctex` 和 `fancyhdr`）
+（包括`xeCJK`，`ctex` 和 `fancyhdr`）
 
 操作步骤：
 
-1. 先从 [Pandoc 官网](https://github.com/jgm/pandoc/releases) 下载并安装最新版的 Pandoc
+1. 先从 [Pandoc 官网](https://github.com/jgm/pandoc/releases) 下载并安装最新版的
+Pandoc
 1. 在命令行中输入 `pip install pypandoc`，安装批量化转换所需的库
 1. 运行 `topdf.py` 文件。比如，若想把`.\CAIE\`文件夹下的所有 MarkDown 文档转换，
 所用的命令是：
+
 ~~~
 python .\topdf.py ./CAIE/
 ~~~
@@ -60,5 +62,5 @@ python .\topdf.py ./CAIE/
 2. 术语的中文翻译写在术语本身的后面，用简体中文里被采纳得最广泛的译法。
 若没有常用中文翻译，或加上翻译无助于学生更好理解术语涵义并查阅中文资料，可以不写。
 1. 每一个术语的释义写在一个正文段落里。
-2. 释义的第一个句号前如果不是一个完整的句子，首字母可以不大写。
+1. 释义的第一个句号前如果不是一个完整的句子，首字母可以不大写。
 后面必须是完整的句子，首字母大写。每一个释义的结尾一定要有句点。

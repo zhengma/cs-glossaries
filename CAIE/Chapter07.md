@@ -8,7 +8,9 @@ moral principles governing the behaviour of an individual or an organisation.
 
 ### copyright 版权
 
-a formal recognition of ownership of a created and published work.
+a formal and legal recognition of ownership and intellectual property rights of
+a created and published work, protecting against unauthorised reproduction of
+work.
 
 ### piracy 盗版
 
@@ -16,7 +18,7 @@ making or using illegal copies of copyrighted materials.
 
 ### commercial software 商业软件
 
-software made for profit and available to customers for a fee.
+software made for profit and available to customers only after they pay for it.
 
 ### open-source software 开源软件
 
