@@ -51,8 +51,8 @@ type of ROM that can be programmed once.
 
 ### erasable PROM (EPROM) 可擦除可编程只读存储器
 
-type of ROM that can be erased with UV light and overwritten multiple times,
-but to erase it the chip has to be removed from device.
+type of ROM that can be erased completely with UV light and overwritten
+multiple times, but to erase it the chip has to be removed from device.
 
 ### electrically EPROM (EEPROM) 电可擦除可编程只读存储器
 

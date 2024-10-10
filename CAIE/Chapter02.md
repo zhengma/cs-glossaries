@@ -195,26 +195,28 @@ The first part is a netID and the second part is a hostID.
 
 ### public IP address 公网IP地址
 
-an IP address visible to any device on the Internet.
+an IP address visible to any device on the Internet, allowing direct access
+on the Internet.
 
 ### private IP address 私有IP地址
 
-an IP address only visible to devices within the LAN.
+an IP address only visible to devices within the LAN and used for LAN
+communication only.
 
 ### static IP address 静态IP地址
 
 an IP address allocated to a device, and does not change each time the device
-is connect to the network.
+rejoins the network.
 
 ### dynamic IP address 动态IP地址
 
-the IP address allocated to a device that may be different each time it is
-connected to the network.
+the IP address allocated to a device that may be different each time the device
+rejoins the network.
 
 ### Subnetting 子网
 
 divide network into two or more sub-networks.  It reduces the traffic in a
-network, improves network security and allow for easier ### maintenance.
+network, improves network security and allow for easier maintenance.
 
 ### Network Address Translation (NAT) 网络地址转换
 

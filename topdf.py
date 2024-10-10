@@ -26,7 +26,7 @@ if __name__ == "__main__":
                 outf = f'{root}/pdf/{file[:-3]}.pdf'
                 if (os.path.exists(outf) and
                     os.path.getmtime(outf) > os.path.getmtime(source)):
-                    print(f'{source} has not changed since last conversion.')
+                    print(f'{source} has not changed since the last conversion.')
                     continue
                 if not os.path.exists(f'{root}/pdf'):
                     os.mkdir(f'{root}/pdf')

@@ -53,7 +53,8 @@ verification that someone or something is who or what they claim to be.
 ### firewall 防火墙
 
 hardware or software that monitors and controls incoming and outgoing traffic
-between a computer and external network.
+between a computer and external network, check it against blacklist / whitelist
+and blocks transmissions that do not meet criteria.
 
 ### eEncryption 加密
 
