@@ -23,7 +23,7 @@ correct network protocols are followed.
 
 ### Internet Layer 网络层
 
-also known as Network Layer.  It identifies the intended network and host,
+also known as *Network Layer*.  It identifies the intended network and host,
 addresses packets with their source and destination addresses by adding a
 further header, and transmit the packet to the Link Layer. It is also
 responsible for routing the packets independently through the optimum route.

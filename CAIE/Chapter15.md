@@ -4,14 +4,14 @@
 
 ### Complex Instruction Set Computer (CISC) 复杂指令集架构
 
-a type of instruction set architecture. Its key characteristic, among others,
-is that a single instruction can be more complex and involve more loading of
-data from memory.  Example: x86 and x86-64.
+a type of instruction set architecture. It contains more instructions that are
+more complex and in more varying formats.  Arithmetic instructions can use data
+in the memory as operands. Example: x86, x86-64.
 
 ### Reduced Instruction Set Computer (RISC) 精简指令集架构
 
-a type of instruction set architecture. Its key characteristic, among others,
-a single instruction is simpler, requiring minimal loading of data from memory.
+a type of instruction set architecture. It contains fewer, simpler instructions
+in a few formats. Only load and store instructions can access the memory.
 Example: ARM, RISC-V.
 
 ### pipelining 流水线
@@ -19,7 +19,7 @@ Example: ARM, RISC-V.
 instruction-level parallelism that allows several instructions to be processed
 simultaneously, increasing the number of instructions completed per unit of time.
 
-### Parallel processing 并行处理
+### parallel processing 并行处理
 
 operation which allows a process to be split up and for each part to be executed
 by a different processor at the same time.
@@ -53,8 +53,9 @@ to simultaneously perform a set of coordinated computations.
 
 ### virtual machine 虚拟机
 
-the emulation of a computer system (including hardware and/or software) on a
-host computer system, using guest operating system(s).
+the **emulation** of a computer system on a host computer system. A virtual
+machine implementation software (hypervisor) emulates the virtual hardware,
+and a guest operating system(s) runs on the virtual machine manages it.
 
 ## 15.2 Boolean Algebra and Logic Circuits 布尔代数与逻辑电路
 
@@ -71,7 +72,8 @@ but also on the previous output via feedback.  Examples: flip-flop.
 
 ### Half adder circuit 半加器
 
-a logical circuit carries out binary addition on two bits, giving sum and carry.
+a logical circuit that carries out binary addition on two bits, giving sum and
+carry.
 
 ### Full adder circuit 全加器
 

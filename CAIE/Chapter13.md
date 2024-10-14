@@ -57,7 +57,7 @@ In order to update the file, a new version has to be created from scratch.
 
 ### random file 随机文件
 
-also known as "direct access file". A file organisation in which records are
+also known as *direct access file*. A file organisation in which records are
 stored in no particular order within the file.  The location of a record within
 the file is related to the key of the record by a hashing algorithm. Updates to
 the file can be carried out directly.
@@ -73,7 +73,7 @@ physical start of the file until the required record is found.
 
 ### direct access 直接访问
 
-also known as random access. A method of file access in which a record can be
+also known as *random access*. A method of file access in which a record can be
 physically found in a file without physically reading other records.  The value 
 
 ### hashing algorithm 哈希算法

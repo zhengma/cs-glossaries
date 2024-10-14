@@ -12,4 +12,3 @@ linked list, binary tree.
 a process using a function or procedure that calls itself.
 It must have a base case, in which it returns without making a recursive call,
 and a general case where the recursive call takes place.
-

@@ -31,7 +31,8 @@ Programs using the instruction set of a processor i.e. assembly language.
 
 ### object-oriented programming 面向对象编程
 
-Programs using the concepts of class, inheritance, encapsulation and polymorphism.
+a programming paradigm that programs using the concepts of class, inheritance,
+encapsulation and polymorphism.
 
 ### class 类
 
@@ -79,8 +80,6 @@ derived class.
 allows methods to be redefined for derived classes, so that the same method to
 take on different behaviours depending on which class is instantiated.
 
-
-
 ## 20.2 File Processing and Exception Handling 文件处理与异常处理
 
 ### exception 异常
@@ -94,4 +93,3 @@ failure, programming error, user error.
 the process of responding to an unexpected event when the program is running
 (such as runtime errors), so that the program does not halt unexpectedly, and
 produce meaningful error messages.
-

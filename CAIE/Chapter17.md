@@ -2,6 +2,22 @@
 
 ## 17.1 Encryption, Encryption Protocols and Digital certificates 加密，加密协议与数字证书
 
+### plain text 明文
+
+data before encryption.
+
+### cipher text 密文
+
+the result of applying an encryption algorithm to data.
+
+### encryption 加密
+
+process of turning plain text into cipher text by an algorithm using a key.
+
+### decryption 解密
+
+process of turning the cipher text back into plain text by an algorithm using a key.
+
 ### asymmetric key cryptography 非对称加密
 
 encryption that provides better security by using a pair of different keys:
