@@ -1,4 +1,4 @@
-## 18 Artificial Intelligence (AI) 人工智能
+# 18 Artificial Intelligence (AI) 人工智能
 
 ## 18.1 Artificial Intelligence (AI) 人工智能
 
@@ -33,3 +33,9 @@ human brain to make decisions. It structures algorithms in layers:
 an input layer, a large number of hidden layers, and an output layer.
 They form an artificial neural network to learn and make intelligent decisions
 on its own. It is trained using large quantities of unlabelled data.
+
+### error back propagation 误差反向传递
+
+method used in artificial neural networks to calculate error gradients so that
+actual node/neuron weightings can be adjusted to improve the performance of the
+model.

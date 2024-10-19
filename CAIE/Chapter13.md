@@ -3,7 +3,8 @@
 ## 13.1 User-defined data types 自定义数据类型
 
 a data type based on an existing data type or other data types that have been
-**defined by the programmer**.
+**defined by the programmer**. It allows data types unavailable in a programming
+language to be constructed, and hence offers flexibility.
 
 ### composite data type 复合型数据类型
 
@@ -74,7 +75,7 @@ physical start of the file until the required record is found.
 ### direct access 直接访问
 
 also known as *random access*. A method of file access in which a record can be
-physically found in a file without physically reading other records.  The value 
+physically found in a file without physically reading other records.
 
 ### hashing algorithm 哈希算法
 
@@ -85,7 +86,8 @@ algorithm maps the value of the key field to the physical location of the record
 ### hash collision 哈希碰撞
 
 when the two values, passing through a hashing algorithm, result in the same
-hash value.
+hash value. In the storage of random file, the result is the storage location as
+determined by the hashing algorithm has already been used for another record.
 
 ## 13.3 Floating-point numbers, representation and manipulation 浮点数的表示与操纵
 

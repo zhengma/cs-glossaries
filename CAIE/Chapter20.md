@@ -66,8 +66,9 @@ a method that is used to update the value of a property.
 
 ### encapsulation 封装
 
-the process of putting data and methods together as a single unit, and hiding
-some of the data and methods from the external world.
+1. the process of putting data and methods together as a single unit
+1. hiding some of the data and methods from the external world. Members set to
+`PRIVATE` are only accessible by the class's own methods.
 
 ### inheritance 继承
 
@@ -86,7 +87,7 @@ take on different behaviours depending on which class is instantiated.
 
 an event that occurs during the execution of a program that disrupts the normal
 flow of instructions, halting the program. Causes include, for example, hardware
-failure, programming error, user error. 
+failure, programming error, user error.
 
 ### exception handling 异常处理
 

@@ -85,13 +85,18 @@ an application layer protocol that provides peer-to-peer file sharing.
 
 ### circuit switching 线路交换
 
-method of transmission in which a dedicated circuit/channel lasts throughout the
-duration of the communication.
+method of transmission, in which a dedicated circuit/path/channel/connection is
+established before transmission starts, and lasts throughout the duration of
+transmission. All data is transferred over this same route, using its whole
+bandwidth. Typical applications include: standard voice communications (PSTN),
+video streaming and private data networks.
 
 ### Packet switching 分组交换
 
-method of transmission where a message is broken into packets which can be sent
-along paths independently from each other.
+method of transmission, where data to be transmitted is split into packets, and
+each packet can be sent along route independently from each other. The routing
+depends on the congestion, so the packets may not arrive in the order sent.
+Most computer data networks, including the Internet, uses packet switching.
 
 ### routing table 路由表
 

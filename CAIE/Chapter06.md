@@ -56,7 +56,7 @@ hardware or software that monitors and controls incoming and outgoing traffic
 between a computer and external network, check it against blacklist / whitelist
 and blocks transmissions that do not meet criteria.
 
-### eEncryption 加密
+### encryption 加密
 
 encode data (plaintext) using encryption key to form ciphertext.  Ciphertext
 can’t be understood if intercepted.
