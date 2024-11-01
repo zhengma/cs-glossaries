@@ -1,4 +1,4 @@
-# 19 Computational thinking and Problem-solving 计算机思维与问题解决
+# 19 计算机思维与问题解决
 
 ## 19.1 Algorithms 算法
 

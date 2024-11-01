@@ -1,4 +1,4 @@
-# 15 Hardware and Virtual Machines 硬件与虚拟机
+# 15 Hardware and VM 硬件与虚拟机
 
 ## 15.1 Processors, Parallel Processing and Virtual Machines 处理器，并行处理与虚拟机
 
